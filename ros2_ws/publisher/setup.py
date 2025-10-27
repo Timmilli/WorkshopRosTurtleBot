@@ -35,6 +35,10 @@ setup(
 		'talker5 = publisher.publisher_member_function_q5:main',
 		'listener51 = publisher.subscriber_member_function_q5_1:main',
 		'listener52 = publisher.subscriber_member_function_q5_2:main',
+		'talker6 = publisher.publisher_member_function_q6:main',
+		'listener6 = publisher.subscriber_member_function_q6:main',
+
+        'minimal_param = python_parameters.python_parameters_node:main',
         ],
     },
 )
