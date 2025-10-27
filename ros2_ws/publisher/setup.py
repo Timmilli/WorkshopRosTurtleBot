@@ -32,6 +32,9 @@ setup(
 		'listener3 = publisher.subscriber_member_function_q3:main',
 		'talker4 = publisher.publisher_member_function_q4:main',
 		'listener4 = publisher.subscriber_member_function_q4:main',
+		'talker5 = publisher.publisher_member_function_q5:main',
+		'listener51 = publisher.subscriber_member_function_q5_1:main',
+		'listener52 = publisher.subscriber_member_function_q5_2:main',
         ],
     },
 )
