@@ -13,9 +13,23 @@ Before everything:
 colcon build
 ```
 
+## Exercices 1 to 4
+
 Then, to execute the script of a question X:
 
 ```
 ros2 run publisher [talkerX|listenerX]
 ```
 (for the 3rd question, replace `talkerX` with `talker3`)
+
+## Exercices 5
+
+For the talker:
+```
+ros2 run publisher talker5
+```
+
+For the listeners:
+```
+ros2 run publisher [listerner51|listener52]
+```
