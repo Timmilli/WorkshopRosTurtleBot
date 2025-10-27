@@ -6,6 +6,7 @@
   <description>TODO: Package description</description>
   <maintainer email="guenael.mail@gmail.com">student</maintainer>
   <license>Apache-2.0</license>
+  <build_depend>system_info_msgs</build_depend>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
 

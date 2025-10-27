@@ -16,23 +16,25 @@ import rclpy
 import os
 from rclpy.node import Node
 
-from std_msgs.msg import String
+from system_info_msgs.msg import ComputerInfo
 
 
 class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(String, 'topic', 10)
+        self.publisher_ = self.create_publisher(ComputerInfo, 'computer_info', 10)
         timer_period = 1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
 
     def timer_callback(self):
-        msg = String()
-        msg.data = 'Hello World: %d, %s, %s' % (self.i, os.environ['HOME'],os.environ['ROS_DOMAIN_ID'])
+        msg = ComputerInfo()
+        msg.computer_name = os.environ['HOME']
+        msg.domain_id = int(os.environ['ROS_DOMAIN_ID'])
+        msg.counter = self.i
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
+        self.get_logger().info(f"published : {msg.computer_name} {msg.domain_id} {msg.counter}")
         self.i += 1
 
 
