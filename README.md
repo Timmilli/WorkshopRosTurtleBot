@@ -1,6 +1,6 @@
 # WorkshopRosTurtleBot
 
-# Students
+## Students
 
 Quentin Fallito
 Guénaël Roger
@@ -44,4 +44,26 @@ ros2 launch publisher publisher_member_function_q6_launch.py
 For the listeners:
 ```
 ros2 run publisher listerner6
+```
+
+## Exercice 7
+
+```
+ros2 run publisher service
+```
+```
+ros2 run py_srvcli client <computer_name> <domain_id>
+```
+Correct question: circuit, 2
+
+## Exercice 8
+
+```
+ros2 launch launch/simple_launch.py
+```
+
+## Exercice 9
+
+```
+ros2 launch launch/param_launch.py
 ```
