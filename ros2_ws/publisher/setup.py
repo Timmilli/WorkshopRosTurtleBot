@@ -24,8 +24,14 @@ setup(
     },
     entry_points={
         'console_scripts': [
-		'talker = publisher.publisher_member_function:main',
-		'listener = publisher.subscriber_member_function:main',
+		'talker1 = publisher.publisher_member_function_q1:main',
+		'listener1 = publisher.subscriber_member_function_q1:main',
+		'talker2 = publisher.publisher_member_function_q2:main',
+		'listener2 = publisher.subscriber_member_function_q2:main',
+		'talker3 = publisher.publisher_member_function_q3:main',
+		'listener3 = publisher.subscriber_member_function_q3:main',
+		'talker4 = publisher.publisher_member_function_q4:main',
+		'listener4 = publisher.subscriber_member_function_q4:main',
         ],
     },
 )
